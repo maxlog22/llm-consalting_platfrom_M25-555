@@ -17,11 +17,13 @@
 - Не хранит и не обрабатывает пароли пользователей
 
 ## Структура
+```plaintext
 .
 ├── auth_service
 ├── bot_service
 ├── docker-compose.yml
 └── README.md
+```
 
 ## Архитектура
 **Auth Service**
