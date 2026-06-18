@@ -48,7 +48,7 @@
 Переменные окружения
 auth_service/.env
 
-'''
+```python
 APP_NAME=auth-service
 ENV=local
 
@@ -57,10 +57,10 @@ JWT_ALG=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=60
 
 SQLITE_PATH=./auth.db
-'''
+```
 
 bot_service/.env
-''' 
+```python
 APP_NAME=bot-service
 ENV=local
 
@@ -77,14 +77,16 @@ OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
 OPENROUTER_MODEL=inclusionai/ling-2.6-flash:free
 OPENROUTER_SITE_URL=https://example.com
 OPENROUTER_APP_NAME=bot-service
-'''
+```
 
 ## Запуск проекта
 1. Auth Service
-'''cd auth_service
+```bash
+cd auth_service
 python -m pip install uv
 uv sync
-uv run uvicorn app.main:app --host 0.0.0.0 --port 8000'''
+uv run uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
 
 1. Аутентификация
 <img width="1081" height="940" alt="image" src="https://github.com/user-attachments/assets/aaf9bf16-1ae4-4fc0-a58d-220da05c4481" />
@@ -100,19 +102,23 @@ uv run uvicorn app.main:app --host 0.0.0.0 --port 8000'''
 Для работы необходимо заполнить:
 - bot_service/.env -> TELEGRAM_BOT_TOKEN
 - bot_service/.env -> OPENROUTER_API_KEY
-'''cd bot_service
+```bash
+cd bot_service
 python -m pip install uv
 uv sync
-uv run uvicorn app.main:app --host 0.0.0.0 --port 8001'''
+uv run uvicorn app.main:app --host 0.0.0.0 --port 8001
+```
 <img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/8c8b1c1c-3668-4f38-9524-5c19d7ad95c6" />
 
 При запуске бота:
+```bash
 cd bot_service
 uv run python run_bot.py
+```
 
 **Возвращает ошибку по таймауту - Telegram заблокирован на территории РФ, поэтому не получилось настроить интеграции с данной площадкой**
-
+```bash
 ╭ [08:23] mephi-2026. maksonl 🗁  ~ 
 ╰ ✔ curl https://api.telegram.org
 curl: (28) Failed to connect to api.telegram.org port 443 after 134359 ms: Could not connect to server
-
+```
