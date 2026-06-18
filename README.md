@@ -45,7 +45,8 @@
 - мок-тесты хэндлеров с fakeredis и pytest-mock
 
 ---
-Переменные окружения /n
+## Переменные окружения 
+
 auth_service/.env
 
 ```python
