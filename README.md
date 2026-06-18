@@ -20,13 +20,8 @@
 .
 ├── auth_service
 ├── bot_service
+├── docker-compose.yml
 └── README.md
-
-
-flowchart TB
-    subgraph Клиенты
-        A[Пользователь]
-    end
 
 ## Архитектура
 **Auth Service**
