@@ -94,8 +94,10 @@ uv run uvicorn app.main:app --host 0.0.0.0 --port 8000
 
 2. Выпуск access_token
 <img width="1016" height="929" alt="image" src="https://github.com/user-attachments/assets/c869e9d2-4656-49e3-8560-72604e8dd554" />
+
 3. Авторизация
 <img width="668" height="470" alt="image" src="https://github.com/user-attachments/assets/2756840b-e7f3-44ba-9789-6e3618429d8a" />
+
 4. auth_me
  <img width="1431" height="915" alt="image" src="https://github.com/user-attachments/assets/fc31c114-7df9-4b3c-985c-617e7134ea03" />
 
